@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0; 
+  width: 100%;
+  /* background-color: #051132; */
+  background: linear-gradient(45deg, #051132, #0033cc); 
+  color: white;
+  position: fixed;
+}
+.navbar ul{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 20px;
+  padding-right: 30px;
+  font-size: medium;
+}
+.navbar ul li{
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navbar ul li a{
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+.navbar h4{
+  margin-left: 20px;
+  font-size: 2rem;
+  margin: 10px 50px;
+  padding: 0;
+}
+
+main{
+  /* background-color:aliceblue; */
+  background: linear-gradient(45deg,  #b2b8c3,#eaecf1);
+  display: flex;
+  flex-direction: column    ;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0; 
+  width: 100%;
+  height: 100%;
+}
+
+#job-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: rgb(237, 232, 232);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 500px ;
+    margin-top: 30px;
+
+}
+.form-element{
+    margin-bottom: 15px;
+}
+.input-box {
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #c0bfbf;
+  border-radius: 12px;    
+  outline: none;
+  box-shadow: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  height: 30px;
+}
+.form-element label {
+    
+  margin-right: 25px;
+}
+.input-box:focus {
+  border-color: #6ca0ff;
+  box-shadow: 0 0 0 4px rgba(106, 158, 255, 0.12);
+}
+
+.form-element button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #6ca0ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-element button:hover {
+  background: #588be6;
+}
+
+#description {
+  width: 250px;
+  height: 60px;
+  vertical-align: top;
+  border-radius: 12px;
+}
+
+#your-jobs h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#jobs-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.job-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.job-card:hover {
+  transform: scale(1.02);
+  
+}   
+.job-card button {
+  padding: 8px 14px;
+  margin-top: 10px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+
+
+
+.footer {
+  /* background-color: #051132; */
+  background: linear-gradient(45deg, #040d25, #041852); 
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.f-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #d0d0d0;
+}
+
+.f-center h4,
+.f-right h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.f-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.f-center ul li {
+  margin-bottom: 10px;
+}
+
+.f-center ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.f-center ul li a:hover {
+  color: #ffcc00;   
+}
+
+
+.f-right p {
+  font-size: 14px;
+  color: #d0d0d0;
+}

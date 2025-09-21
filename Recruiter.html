@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Recruiter.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h4>Job Portal</h4>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Recruiter.html">Recruit</a></li>
+                <li><a href="jobseeker.html">Apply</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h1>Manage Job Postings</h1>
+
+    <section id="job-form">
+      <h2 id="form-title">Add New Job</h2>
+      <form id="form">
+        <input  class="form-element" type="hidden" id="job-id" value="">
+        <div class="form-element" >
+          <label for="title">Job Title</label>
+          <input class="input-box" type="text" id="title" required>
+        </div>
+        <div class="form-element" >
+          <label for="company">Company</label>
+          <input class="input-box" type="text" id="company" required>
+        </div>
+        <div class="form-element" >
+          <label for="location">Location</label>
+          <input class="input-box" type="text" id="location" required>
+        </div>
+        <div class="form-element" >
+          <label for="type">Job Type</label>
+          <select class="input-box" id="type" required>
+            <option value="">-- Select Type --</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Part-time">Part-time</option>
+            <option value="Remote">Remote</option>
+          </select>
+        </div>
+        <div class="form-element" >
+          <label for="salary">Salary</label>
+          <input class="input-box" type="text" id="salary" required>
+        </div>
+        <div class="form-element" >
+          <label for="description">Description</label>
+          <textarea id="description" rows="4" required></textarea>
+        </div>
+        <div class="form-element" >
+          <button type="submit" id="submit-btn">Add Job</button>
+          <button type="button" id="cancel-btn" style="display:none;">Cancel</button>
+        </div class="form-element" >
+      </form>
+    </section>
+
+    <section id="sort-section">
+      <label  for="sort-select">Sort by:</label>
+      <select class="input-box" id="sort-select">
+        <option value="date_desc">Date (latest)</option>
+        <option value="date_asc">Date (Oldest)</option>
+        <option value="title_asc">Title A to Z</option>
+        <option value="title_desc">Title Z to A</option>
+        <option value="salary_asc">Salary Low to High</option>
+        <option value="salary_desc">Salary High to Low</option>
+      </select>
+    </section>
+
+    <section id="your-jobs">
+      <h2>Your Jobs</h2>
+      <div id="jobs-list">
+
+      </div>
+    </section>
+  </main>
+    <footer class="footer">
+    <div class="f-container">
+        <div class="footer-left">
+        <h3>JobPortal</h3>
+        <p>Connecting Talent with Opportunity</p>
+        </div>
+        <div class="f-center">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="Home.html">Dashboard</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="terms.html">Terms & Privacy</a></li>
+        </ul>
+        </div>
+        <div class="f-right">
+        <h4>Connect</h4>
+        <p>Email: info@jobportal.lcom</p>
+        </div>
+    </div>
+    </footer>
+    <script src="Recruiter.js"></script>
+</body>
+</html>

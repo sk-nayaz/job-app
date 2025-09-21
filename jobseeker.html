@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="jobseeker.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <h4>JobPortal</h4>
+    <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Recruiter.html">Recruit</a></li>
+                <li><a href="jobseeker.html">Apply</a></li>
+    </ul>
+  </div>
+
+  <div class="filters">
+    <input type="text" id="search-name" placeholder="Search job by name">
+    <select id="job-type">
+      <option value="">Filter by type</option>
+      <option value="">All Types</option>
+      <option value="Full-time">Full-time</option>
+      <option value="Part-time">Part-time</option>
+      <option value="Internship">Internship</option>
+    </select>
+  </div>
+  <div class="main">
+    <div id="jobs-list">
+      <div class="job-card">
+        <h3>Frontend Developer</h3>
+        <p>Location: New York</p>
+        <p>Type: Full-time</p>
+        <button class="apply-btn">Apply</button>
+      </div>
+      <div class="job-card">
+        <h3>Backend Engineer</h3>
+        <p>Location: Remote</p>
+        <p>Type: Internship</p>
+        <button class="apply-btn">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="apply-modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Apply for Job</h2>
+        <form id="apply-form">
+        <input type="hidden" id="apply-job-id">
+        <div class="form-element">
+            <input type="text" id="applicant-name" placeholder="Your Name" required>
+        </div>
+        <div class="form-element">
+            <input type="email" id="applicant-email" placeholder="Your Email" required>
+        </div>
+        <div class="form-element">
+            <textarea id="applicant-message" placeholder="Why should we hire you?" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="f-container">
+        <div class="footer-left">
+        <h3>JobPortal</h3>
+        <p>Connecting Talent with Opportunity</p>
+        </div>
+        <div class="f-center">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="Home.html">Dashboard</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="terms.html">Terms & Privacy</a></li>
+        </ul>
+        </div>
+        <div class="f-right">
+        <h4>Connect</h4>
+        <p>Email: info@jobportal.lcom</p>
+        </div>
+    </div>
+    </footer>
+    <script src="jobseeker.js"></script>
+</body>
+</html>
